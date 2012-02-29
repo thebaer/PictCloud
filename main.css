@@ -1,6 +1,5 @@
 @charset "utf-8";
-/* RU PictCloud Stylesheet
- * By Matt Baer
+/* PictCloud Stylesheet
  *
  * Modified from LunchTable core style
  * http://www.lunch-table.com/
@@ -79,7 +78,7 @@ table input, #edit input{padding:4px;border:1px solid #999}
 .inline-icon{margin:0 0 -3px 1px}
 a.user{font-weight:bold}
 
-/* PictCloud */
+/* PictCloud-specific */
 nav#sub {
 	margin: 12px 4px 16px;
 }
