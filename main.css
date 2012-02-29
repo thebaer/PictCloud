@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* RU PictCloud Stylesheet
+ * By Matt Baer
+ *
+ * Modified from LunchTable core style
+ * http://www.lunch-table.com/
+ */
+
+/* Color scheme */
+body{background-color: #A6A000}
+nav#conscious{background-color:#0F0E29;font-size:14px;color:white}
+nav#conscious a{margin:0 !important}
+#the-void{border-top:15px solid #101010;background-color:#fff;border-left:0px solid #036;border-right:0px solid #036;border-bottom:0px solid #036;color:black;padding:10px 20px 20px 20px !important}
+#yang{background-color:#eee;color:#333}
+.avatar{background-color:#036}
+nav#conscious h1{color:#BFB530}
+#the-void h1, hgroup#main h1 a{color:#BF8530}
+#the-void h2{color:#391098}
+a:link, a:visited{color:#fff}
+#the-void a:link, #the-void a:visited{color:#069}
+nav#conscious a:hover{color:#fff !important;background-color:#282756;border-radius:6px;-moz-border-radius:6px}
+nav#conscious a:link, nav#conscious a:visited{color:#fff;}
+#lt-notif{background-color:#069}
+input[type="submit"]{border-color:#AD8AFE;background-color:#A66200;color:#fff}
+input[type="submit"]:hover{background-color:#BF8530}
+#move-about{background-color:#036}
+#move-about a:link, #move-about a:visited{color:#fff}
+.scope-out-the-table{color:#fff;background-color:#CEDC00}
+#creation-bar{background-color:#FFFAE2}
+.online{color:#391098 !important;}
+.idle{color:#099 !important}
+.offline{color:gray !important}
+#num-posts{background-color:#FFEC7D}
+#poster, #poster a, a.orig-poster{color:#069 !important}
+a.poster{color:#999 !important}
+
+/* Structure styles */
+body{margin:0 2em;font-family:"Lucida Grande", helvetica, verdana, arial, sans-serif}
+textarea, #edit input{font-family:"Lucida Grande", helvetica, verdana, arial, sans-serif}
+table{width:100%}
+small{font-size:12px}
+#the-void p{margin:8px 0}
+#the-void h1 + p{margin:12px 0}
+#the-void h2{margin:12px 0 8px}
+/* .quack: clearfix */
+.quack:after{ clear:both; content:""; display:block; height:0; visibility:hidden; font-size:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+img{border:0}
+body > footer{text-align:center;margin:16px 16px 56px 16px}
+body > footer div{margin-top:6px;font-size:0.75em}
+.error{color:red;padding:3px;font-size:larger;}
+a:link, a:visited{text-decoration:none}
+#the-void a:hover{text-decoration:underline}
+canvas#cafeteria{margin:8px 4px;cursor:pointer}
+nav#conscious{position:fixed;top:0px;right:0px;z-index:1000;padding:8px 12px 8px 72px;border-bottom-left-radius:12px;-moz-border-radius-bottomleft:12px;}
+nav#conscious h1{margin:0px;font-size:1.6em;display:inline;position:absolute;top:2px;left:12px}
+nav#conscious h1 #beta{font-size:0.5em;font-weight:normal;position:relative;top:-10px;right:-1px}
+nav#conscious a{margin:0px 2px;padding:4px 6px}
+nav#user-behavior{position:fixed;bottom:0px;left:0px;padding:5px 0px 5px;width:200px;border-top-right-radius:8px;-moz-border-radius-topright:8px;}
+nav#conscious li, nav#user-behavior li{margin:2px 0;padding:2px 80px 2px 16px}
+nav#conscious div.stats{margin-top:4px;font-size:14px;display:inline}
+nav#conscious img{margin-bottom:-3px}
+nav#user-behavior a:link, nav#user-behavior a:visited{font-size:15px}
+nav#user-behavior li:hover{background:#ccc;color:white}
+nav#user-behavior li:hover a{color:white}
+nav#user-behavior li.subnav{padding-left:28px}
+#the-void{min-height:200px;padding:20px;margin-top:0;font-size:0.86em;border-bottom-left-radius:8px;border-bottom-right-radius:24px;-moz-border-radius-bottomleft:8px;-moz-border-radius-bottomright:24px}
+#the-void hgroup#main{height:48px}
+#the-void hgroup#main h1{margin:0 16px 8px 0;font-size:2em;float:left}
+#the-void hgroup#main #sub-nav{padding:10px 0 0 0}
+nav#sub-nav a, #table-info a{margin:0 8px}
+#sub .selected, #sub .selected:hover{font-weight:bold;}
+a.thousand-words{padding-left:20px;background-repeat:no-repeat;background-position:left center}
+input[type="email"], input[type="password"]{border:1px solid #ccc}
+input[type="submit"]{border:1px solid #ccc}
+div[id^="info"]{display:none;overflow:hidden}
+textarea{width:100%;height:80px;padding:4px;border:1px solid #999;resize:vertical}
+table input, #edit input{padding:4px;border:1px solid #999}
+.inline-icon{margin:0 0 -3px 1px}
+a.user{font-weight:bold}
+
+/* PictCloud */
+nav#sub {
+	margin: 12px 4px 16px;
+}
+nav#sub a {
+	margin-right: 16px;
+}
+form.search {
+	float: right;
+}
+p.bio { 
+	font-size: larger;
+}
+div.field {
+	padding: 4px;
+	margin: 0;
+}
+div.field .label {
+	width: 70px;
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 6px;
+	color: #666;
+}
+#results div {
+	padding: 12px 4px;
+	border-bottom: 1px solid #ccc;
+}
+#showcase {
+	text-align: center;
+	width: 640px;
+	margin: 0px auto;
+}
+#showcase img.main {
+	padding: 8px;
+	max-width: 640px;
+}
+#showcase #insights {
+	text-align: left;
+}
+.moment {
+	max-width: 160px;
+	max-height: 120px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 6px;
+	border: 1px solid #ccc;
+	margin: 12px;
+}
+#gallery .moment {
+	float: left;
+}
+#showcase #tags {
+	font-size: smaller;
+}
+#showcase #tags span {
+	font-style: italic;
+	color: #999;
+}
+p.notify {
+	text-align: center;
+}
+#showcase .author a {
+	font-weight: bold;
+}
+#albumList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#albumList li {
+	padding: 6px 0;
+}
+.msg {
+	font-weight: bold;
+}
